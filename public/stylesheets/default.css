@@ -9,14 +9,9 @@
 
 /* Styling */
 body {
-	/*background: #bd561a;
-	background: #f29e46;
-	background: #ffc300;*/
 	background: #0f087b;
-	color: #FFF;
 	font-family: Verdana, Geneva, sans-serif;
 }
-
 #topgrad {
 	background: url(../images/topgrad.png) repeat-x left top;
 }
@@ -36,14 +31,39 @@ body {
 #nspireimage {
 	float: left;
 }
-a {
-	f
+
+/* Navigation */
+
+#navigation {
+	background: url(../images/navgrad.png) repeat-x top left;
+	padding: 0px;
+}
+#topnavtier {
+	float: left;
+	border-left: #000 solid 1px;
+}
+.topmenuitem {
+	list-style-type: none;
+	display: inline;
+	float: left;
+	border-right: #000 solid 1px;
+	padding: 2px 5px;
+	background: blue;
+	color: #fff;
+	height: 25px;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px 15px 0px 15px;
+	background: url(../images/navsprite.png) repeat-x;
+	background-position: 0px 0px;
+}
+.topmenuitemhover {
+	background: url(../images/navsprite.png) repeat-x;
+	background-position: 0px -30px;
 }
 
 
-/*
-960 Grid System
-*/
+/* 960 Grid System */
 .container_12,.container_16{
 	margin-left:auto;
 	margin-right:auto;
