@@ -3,9 +3,9 @@
 $(document).ready(function() {
 	$("li").hover(
 	function() {
-		$(this).addClass("topmenuitemhover");
+		$(this).addClass("navmenuitemhover");
 	},
 	function() {
-		$(this).removeClass("topmenuitemhover");
+		$(this).removeClass("navmenuitemhover");
 	});
 });
