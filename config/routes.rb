@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -7,8 +8,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
 
-
-  map.resources :nspirefiles
+  map.namespace :admin do |admin|
+    admin.resources :nspirefiles
+    admin.resources :posts
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.
