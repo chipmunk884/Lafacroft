@@ -22626,3 +22626,2272 @@ Processing HomeController#index (for 127.0.0.1 at 2009-09-05 14:31:09) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:10:49) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 60ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 23:10:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing TutorialsController#index (for 127.0.0.1 at 2009-09-05 23:10:59) [GET]
+Rendering template within layouts/application
+Rendering tutorials/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 131ms (View: 129, DB: 0) | 200 OK [http://localhost/tutorials]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:14:32) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 52ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 23:14:34) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:14:35) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 61ms (View: 32, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 23:14:36) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:14:56) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 128ms (View: 117, DB: 0) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-05 23:15:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 57ms (View: 46, DB: 1) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-05 23:15:24) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:17:27) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:18:01) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 32, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#destroy (for 127.0.0.1 at 2009-09-05 23:18:32) [DELETE]
+  Parameters: {"authenticity_token"=>"X1xyd25h/RREbf/y5zPNSuLvRZIfi8iddXakA2uKaV4=", "id"=>"3"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+  [4;35;1mPost Destroy (1.0ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/admin/posts
+Completed in 70ms (DB: 1) | 302 Found [http://localhost/admin/posts/3]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:18:33) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 42ms (View: 31, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-05 23:19:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:19:33) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:19:37) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 42ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-05 23:20:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 56ms (View: 53, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-05 23:22:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 30ms (View: 28, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:23:01) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 99ms (View: 90, DB: 0) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#new (for 127.0.0.1 at 2009-09-05 23:23:06) [GET]
+Rendering template within layouts/application
+Rendering admin/posts/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 47ms (View: 37, DB: 0) | 200 OK [http://localhost/admin/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 23:23:07) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#create (for 127.0.0.1 at 2009-09-05 23:23:33) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"date(1i)"=>"2009", "author"=>"Ross", "date(2i)"=>"9", "title"=>"Sample Dad Post", "date(3i)"=>"5", "date(4i)"=>"23", "date(5i)"=>"23", "content"=>"This is a sample post for dad."}, "authenticity_token"=>"X1xyd25h/RREbf/y5zPNSuLvRZIfi8iddXakA2uKaV4="}
+  [4;36;1mPost Create (1.0ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "author", "updated_at", "date", "content") VALUES('2009-09-06 03:23:34', 'Sample Dad Post', 'Ross', '2009-09-06 03:23:34', '2009-09-06 03:23:00', 'This is a sample post for dad.')[0m
+Redirected to http://localhost:3000/admin/posts/4
+Completed in 81ms (DB: 1) | 302 Found [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-05 23:23:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 41ms (View: 29, DB: 0) | 200 OK [http://localhost/admin/posts/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 23:23:39) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:23:42) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 32, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:23:58) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 43ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:24:05) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 32, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:24:15) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 42ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-05 23:24:23) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 42ms (View: 32, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-05 23:24:41) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 43ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-05 23:24:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing InfoController#about (for 127.0.0.1 at 2009-09-05 23:25:24) [GET]
+Rendering template within layouts/application
+Rendering info/about
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://localhost/info/about]
+
+
+Processing InfoController#contact (for 127.0.0.1 at 2009-09-05 23:25:33) [GET]
+Rendering template within layouts/application
+Rendering info/contact
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://localhost/info/contact]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-05 23:25:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 30ms (View: 27, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2009-09-05 23:25:45) [GET]
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering nspire/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 30, DB: 1) | 200 OK [http://localhost/nspire]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:33:57) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2192ms (View: 2183, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2009-09-07 17:34:17) [GET]
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering nspire/index
+Completed in 56ms (View: 32, DB: 1) | 200 OK [http://127.0.0.1/nspire]
+
+
+Processing TutorialsController#index (for 127.0.0.1 at 2009-09-07 17:34:19) [GET]
+Rendering template within layouts/application
+Rendering tutorials/index
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://127.0.0.1/tutorials]
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2009-09-07 17:34:20) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://127.0.0.1/resources]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:34:28) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:34:41) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:34:59) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:40:10) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 83ms (View: 73, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:40:19) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2009-09-07 17:40:25) [GET]
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering nspire/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/nspire]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:40:29) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:44:34) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 37ms (View: 29, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:44:42) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:45:12) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:46:15) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 40ms (View: 30, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:46:39) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 90ms (View: 82, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:46:45) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:47:23) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:47:31) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:47:37) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 68ms (View: 59, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-07 17:47:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-09-07 17:47:52) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"0XdXgA2qrTq4BoaUI4VGzH7LY80v+Q+qZ88moVJZK1U=", "login"=>"chipmunk884", "password"=>"gilson88"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'chipmunk884') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 117ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:47:53) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 106ms (View: 97, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-07 17:48:04) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 456ms (View: 445, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-07 17:48:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 73ms (View: 62, DB: 1) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-07 17:48:48) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-09-07 17:48:54) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"date(1i)"=>"2009", "author"=>"Ross", "date(2i)"=>"9", "title"=>"First Lafacroft Post", "date(3i)"=>"5", "date(4i)"=>"14", "date(5i)"=>"25", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis."}, "authenticity_token"=>"0XdXgA2qrTq4BoaUI4VGzH7LY80v+Q+qZ88moVJZK1U=", "id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mPost Update (1.0ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2009-09-07 21:48:54', "content" = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis.' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/posts/1
+Completed in 133ms (DB: 2) | 302 Found [http://localhost/admin/posts/1]
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-07 17:48:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 45ms (View: 32, DB: 1) | 200 OK [http://localhost/admin/posts/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 17:48:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-07 17:49:01) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 45ms (View: 33, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-07 17:49:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 105ms (View: 92, DB: 1) | 200 OK [http://localhost/admin/posts/2/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-07 17:49:11) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-09-07 17:49:16) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"date(1i)"=>"2009", "author"=>"Ross", "date(2i)"=>"9", "title"=>"Second Post", "date(3i)"=>"5", "date(4i)"=>"11", "date(5i)"=>"52", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis."}, "authenticity_token"=>"0XdXgA2qrTq4BoaUI4VGzH7LY80v+Q+qZ88moVJZK1U=", "id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+  [4;36;1mPost Update (1.0ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2009-09-07 21:49:16', "content" = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis.' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/admin/posts/2
+Completed in 92ms (DB: 1) | 302 Found [http://localhost/admin/posts/2]
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-07 17:49:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 42ms (View: 29, DB: 2) | 200 OK [http://localhost/admin/posts/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 17:49:22) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-07 17:49:23) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 44ms (View: 32, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-07 17:49:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 51ms (View: 39, DB: 1) | 200 OK [http://localhost/admin/posts/4/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-07 17:49:34) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-09-07 17:49:52) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"date(1i)"=>"2009", "author"=>"Ross", "date(2i)"=>"9", "title"=>"Sample Dad Post", "date(3i)"=>"5", "date(4i)"=>"23", "date(5i)"=>"23", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis."}, "authenticity_token"=>"0XdXgA2qrTq4BoaUI4VGzH7LY80v+Q+qZ88moVJZK1U=", "id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;36;1mPost Update (1.0ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2009-09-07 21:49:52', "content" = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel nulla. Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada nec sit amet felis.' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/admin/posts/4
+Completed in 79ms (DB: 1) | 302 Found [http://localhost/admin/posts/4]
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-07 17:49:53) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 41ms (View: 28, DB: 0) | 200 OK [http://localhost/admin/posts/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 17:49:57) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-07 17:50:00) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 46ms (View: 34, DB: 3) | 200 OK [http://localhost/admin/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:50:02) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 40ms (View: 32, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:52:15) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 30, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:54:50) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 63ms (View: 55, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:55:23) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 51ms (View: 42, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 17:55:53) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 30, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:01:04) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 70ms (View: 60, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:01:58) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 31, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:02:24) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 38ms (View: 30, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:06:31) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 96ms (View: 87, DB: 3) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:06:50) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 29, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:07:15) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 31, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:11:02) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.title) on line #20 of app/views/home/index.html.erb:
+17: 	<div id="latestfiles">
+18: 		<strong>Latest Files</strong><br />
+19: 		<% @files.each do |file| %>
+20: 			<%= @file.title %>
+21: 		<% end %>
+22: 	</div>
+23: </div>
+
+    app/views/home/index.html.erb:20
+    app/views/home/index.html.erb:19:in `each'
+    app/views/home/index.html.erb:19
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:11:18) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 64ms (View: 49, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:11:40) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 69ms (View: 56, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-09-07 18:23:28) [GET]
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:23:29) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-07 18:23:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-07 18:24:56) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:25:02) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:25:48) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:31:52) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:32:47) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 18:40:43) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 37ms (View: 9, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-07 21:47:37) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 55ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2009-09-07 21:47:54) [GET]
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering nspire/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/nspire]
+
+
+Processing TutorialsController#index (for 127.0.0.1 at 2009-09-07 21:47:57) [GET]
+Rendering template within layouts/application
+Rendering tutorials/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tutorials]
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2009-09-07 21:47:59) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/resources]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-07 21:48:16) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 77ms (View: 34, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-07 21:48:21) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:07:07) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2122ms (View: 2091, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:26:16) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 45ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-09 19:30:00) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:38:07) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 46ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:39:39) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:40:19) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:43:12) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 81ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:44:18) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 51ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:44:59) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:46:52) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:49:18) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:49:45) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:53:41) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 51ms (View: 36, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:54:15) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:55:10) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 52ms (View: 37, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 19:59:01) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 73ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:00:14) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 50ms (View: 36, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:01:48) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:02:24) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 49ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:02:52) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:04:17) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 26ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:05:13) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:05:45) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:06:13) [GET]
+  [4;36;1mPost Load (2.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:07:19) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:08:03) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-09 20:08:46) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:12:49) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-09 20:13:03) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing NspireController#index (for 69.37.37.103 at 2009-09-09 20:13:37) [GET]
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering nspire/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://chipmunk884.dyndns.org/nspire]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:43:59) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 75ms (View: 37, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:45:11) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 46ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:45:41) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:46:49) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 27ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:48:07) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 83ms (View: 69, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:48:37) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:49:39) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 50ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:50:46) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 30ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:52:08) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:52:38) [GET]
+  [4;36;1mPost Load (2.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 33ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:53:33) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 77ms (View: 62, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:53:59) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:55:46) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 51ms (View: 38, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:56:06) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 20:56:56) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 79ms (View: 64, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:00:32) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:00:50) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:03:55) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 47ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:04:14) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:04:27) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 21:10:15) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-09 21:11:04) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://chipmunk884.dyndns.org/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 22:10:19) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 22:10:56) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 22:12:22) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-09 22:16:07) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2073ms (View: 2052, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 17:05:15) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2153ms (View: 2108, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 17:05:50) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 17:06:11) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-10 17:07:08) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-10 17:11:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 49ms (View: 47, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-09-10 17:12:00) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"woHjqVM7tn82bJJ9Jde4eiLcwUCu7ANJhaft1nklaV0=", "login"=>"chipmunk884", "password"=>"gilson88"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'chipmunk884') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 149ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 17:12:01) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 160ms (View: 115, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing Admin::NspirefilesController#index (for 127.0.0.1 at 2009-09-10 17:12:08) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/index
+Completed in 76ms (View: 41, DB: 2) | 200 OK [http://localhost/admin/nspirefiles]
+
+
+Processing Admin::NspirefilesController#edit (for 127.0.0.1 at 2009-09-10 17:12:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" WHERE ("nspirefiles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/edit
+Completed in 60ms (View: 25, DB: 2) | 200 OK [http://localhost/admin/nspirefiles/2/edit]
+
+
+Processing Admin::NspirefilesController#images to gif (for 127.0.0.1 at 2009-09-10 17:12:14) [GET]
+  Parameters: {"id"=>"logo"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::NspirefilesController#show (for 127.0.0.1 at 2009-09-10 17:12:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" WHERE ("nspirefiles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/show
+Completed in 111ms (View: 22, DB: 0) | 200 OK [http://localhost/admin/nspirefiles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::NspirefilesController#show (for 127.0.0.1 at 2009-09-10 17:20:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" WHERE ("nspirefiles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/show
+Completed in 72ms (View: 35, DB: 1) | 200 OK [http://localhost/admin/nspirefiles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:20:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/headerimage2.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:20:05) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::NspirefilesController#show (for 127.0.0.1 at 2009-09-10 17:20:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" WHERE ("nspirefiles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/show
+Completed in 70ms (View: 34, DB: 0) | 200 OK [http://localhost/admin/nspirefiles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:20:17) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::NspirefilesController#show (for 127.0.0.1 at 2009-09-10 17:22:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" WHERE ("nspirefiles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering admin/nspirefiles/show
+Completed in 77ms (View: 39, DB: 2) | 200 OK [http://localhost/admin/nspirefiles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 17:23:49) [GET]
+
+ActionController::RoutingError (No route matches "/admin/home" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 17:24:06) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 78ms (View: 62, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:44:07) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 98ms (View: 47, DB: 3) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:44:32) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 146ms (View: 105, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:45:27) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 50ms (View: 34, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:45:50) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 49ms (View: 34, DB: 3) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:46:21) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 48ms (View: 35, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:46:35) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 50ms (View: 35, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:47:34) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 50ms (View: 35, DB: 3) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:51:15) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 51ms (View: 34, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:54:29) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 103ms (View: 35, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-10 20:54:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/body_bg_repeat.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:54:57) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 50ms (View: 34, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:55:33) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 49ms (View: 35, DB: 2) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 69.37.37.103 at 2009-09-10 20:56:18) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 20:59:15) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 56ms (View: 35, DB: 4) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-10 21:55:30) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 56ms (View: 38, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 06:51:29) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2198ms (View: 2155, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 06:57:09) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 43ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 15:28:18) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 53ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 15:29:44) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 52ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2009-09-11 15:30:08) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 64ms (View: 61, DB: 0) | 200 OK [http://localhost/resources]
+
+
+Processing TutorialsController#index (for 127.0.0.1 at 2009-09-11 15:30:21) [GET]
+Rendering template within layouts/application
+Rendering tutorials/index
+Completed in 38ms (View: 37, DB: 0) | 200 OK [http://localhost/tutorials]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 15:30:31) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 49ms (View: 10, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing InfoController#about (for 127.0.0.1 at 2009-09-11 15:30:38) [GET]
+Rendering template within layouts/application
+Rendering info/about
+Completed in 57ms (View: 55, DB: 0) | 200 OK [http://localhost/info/about]
+
+
+Processing InfoController#contact (for 127.0.0.1 at 2009-09-11 15:30:44) [GET]
+Rendering template within layouts/application
+Rendering info/contact
+Completed in 38ms (View: 35, DB: 0) | 200 OK [http://localhost/info/contact]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 15:30:49) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 48ms (View: 10, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 17:40:00) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 58ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2009-09-11 17:40:40) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/resources]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 17:40:47) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 48ms (View: 12, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 18:59:19) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 504ms (View: 455, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:01:09) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 56ms (View: 25, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:02:55) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 57ms (View: 26, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:03:33) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 42ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:03:49) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 41ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:05:37) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 42ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:06:05) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 43ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:06:39) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 41ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:07:05) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 42ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:07:24) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 42ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:07:47) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 43ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:08:04) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:10:11) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 57ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:11:28) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 56ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:12:53) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 44ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:13:10) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:15:02) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 59ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:16:17) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 45ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:17:20) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 113ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:17:54) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 45ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:18:18) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 44ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:19:05) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 45ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:19:26) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 57ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:20:07) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 45ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:20:25) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 53ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:20:41) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:21:17) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 58ms (View: 24, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:21:34) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:22:04) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 44ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 69.37.103.159 at 2009-09-11 19:24:47) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 44ms (View: 11, DB: 2) | 200 OK [http://chipmunk884.dyndns.org/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-11 19:37:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 60ms (View: 58, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-09-11 19:37:28) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6ngzx+ANP2iWA2gynvN9B4DZiZU2MLPiEhu3TcX7Cvk=", "login"=>"chipmunk884", "password"=>"gilson88"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'chipmunk884') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 138ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:37:30) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 147ms (View: 112, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-11 19:37:34) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 59ms (View: 48, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-11 19:37:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 72ms (View: 62, DB: 0) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 19:37:45) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-11 19:41:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 214ms (View: 133, DB: 0) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 19:41:10) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 19:41:14) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 80ms (View: 43, DB: 3) | 200 OK [http://localhost/home]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-11 19:41:40) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 43ms (View: 31, DB: 2) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-11 19:41:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 144ms (View: 106, DB: 1) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 19:41:51) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/imagemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 19:41:51) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/filemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 19:41:52) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-09-11 19:41:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/edit
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 49ms (View: 37, DB: 2) | 200 OK [http://localhost/admin/posts/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 19:42:07) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/filemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 19:42:08) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/imagemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 19:42:11) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 22:23:59) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#images to gif (for 127.0.0.1 at 2009-09-11 22:24:07) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-09-11 22:24:25) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"date(1i)"=>"2009", "author"=>"Ross", "date(2i)"=>"9", "title"=>"First Lafacroft Post", "date(3i)"=>"5", "date(4i)"=>"14", "date(5i)"=>"25", "content"=>"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel <em>nulla.</em> Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morb<strong>i tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque</strong> eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada n<span style=\"text-decoration: underline;\">ec sit amet feli</span>s.<img src=\"http://localhost:3000/javascripts/tiny_mce/plugins/emotions/img/smiley-cool.gif\" border=\"0\" alt=\"Cool\" title=\"Cool\" /></p>"}, "authenticity_token"=>"6ngzx+ANP2iWA2gynvN9B4DZiZU2MLPiEhu3TcX7Cvk=", "id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mPost Update (1.0ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2009-09-12 02:24:25', "content" = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac mauris sem, a aliquam tortor. Nunc ac orci et tellus sagittis lacinia vel vel <em>nulla.</em> Vestibulum lectus metus, auctor vitae facilisis et, aliquam lacinia urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ac ante et eros rhoncus adipiscing sed at mauris. Pellentesque habitant morb<strong>i tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis lobortis elit a aliquam. Nulla vel ipsum pharetra massa venenatis fermentum. Nunc at faucibus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu tortor, auctor quis malesuada non, molestie ut nisi. Pellentesque</strong> eros risus, suscipit mattis pretium sed, adipiscing ac nunc. Vestibulum scelerisque nisi sit amet nisl euismod convallis. Nullam in semper diam. Nullam sed massa nec leo scelerisque malesuada n<span style="text-decoration: underline;">ec sit amet feli</span>s.<img src="http://localhost:3000/javascripts/tiny_mce/plugins/emotions/img/smiley-cool.gif" border="0" alt="Cool" title="Cool" /></p>' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/posts/1
+Completed in 88ms (DB: 2) | 302 Found [http://localhost/admin/posts/1]
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-11 22:24:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 123ms (View: 112, DB: 0) | 200 OK [http://localhost/admin/posts/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:24:30) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-09-11 22:25:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/posts/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 88ms (View: 62, DB: 1) | 200 OK [http://localhost/admin/posts/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:25:05) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 22:25:12) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 136ms (View: 103, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2009-09-11 22:25:32) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 42ms (View: 41, DB: 0) | 200 OK [http://localhost/resources]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 22:39:49) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNspirefile Load (0.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 78ms (View: 45, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-09-11 22:40:52) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering admin/posts/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 60ms (View: 44, DB: 1) | 200 OK [http://localhost/admin/posts]
+
+
+Processing Admin::PostsController#new (for 127.0.0.1 at 2009-09-11 22:40:57) [GET]
+Rendering template within layouts/application
+Rendering admin/posts/new
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 87ms (View: 75, DB: 1) | 200 OK [http://localhost/admin/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:40:58) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/imagemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:40:58) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/filemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:40:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::PostsController#new (for 127.0.0.1 at 2009-09-11 22:41:03) [GET]
+Rendering template within layouts/application
+Rendering admin/posts/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 48ms (View: 38, DB: 0) | 200 OK [http://localhost/admin/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:41:14) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/imagemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:41:14) [GET]
+  Parameters: {"1250707704"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/filemanager/editor_plugin.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-11 22:41:17) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-11 22:42:11) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNspirefile Load (0.0ms)[0m   [0mSELECT * FROM "nspirefiles" [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 76ms (View: 43, DB: 1) | 200 OK [http://localhost/home]

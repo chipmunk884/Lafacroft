@@ -1,1 +1,24 @@
-Future home page content.
+<div class="grid_8 alpha" id="homepageposts">
+	<% @posts.each do |post| %>
+		<div class="post" id="<%= post.id %>">
+				<div class="title"><%= h post.title %></div>
+				<div class="dateauthor">Posted on <%= post.date.strftime('%m/%d/%Y') %> by <%= h post.author %></div>
+				<div class="content"><%= post.content %></div>
+		</div>
+	<% end %>
+</div>
+<div class="grid_4 omega" id="homesidebar">
+	<div id="search">
+		<form>
+			<strong>Search TI-Nspire Files</strong>
+			<input type="text" />
+			<input type="submit" value="Search!" />
+		</form>
+	</div><br />
+	<div id="latestfiles">
+		<strong>Latest Files</strong><br />
+		<% @files.each do |file| %>
+			<%= file.title %>
+		<% end %>
+	</div>
+</div>
