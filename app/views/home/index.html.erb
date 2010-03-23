@@ -1,29 +1,41 @@
-<div class="grid_8 alpha" id="homepageposts">
+<section id="posts_home">
+	
 	<% @posts.each do |post| %>
-		<div class="post" id="<%= post.id %>">
-				<div class="title"><%= h post.title %></div>
-				<div class="dateauthor">Posted on <%= post.date.strftime('%m/%d/%Y') %> by <%= h post.author %></div>
-				<div class="content"><%= post.content %></div>
-		</div>
+		<article id="<%= post.id %>">
+			<hgroup>
+				<h1><%= h post.title %></h1>
+				<h2>Posted on <%= post.created_at.strftime('%m/%d/%Y') %> by <%= h post.author %></h2>
+			</hgroup>
+			<p><%= post.content %></p>
+		</article>
 	<% end %>
-</div>
-<div class="grid_4 omega" id="homesidebar">
-	<div id="search">
-		<form>
-			<span class="sidebartitle">Search TI-Nspire Files</span>
-			<input type="text" />
-			<input type="submit" value="Search!" />
-		</form>
-	</div><br />
-	<div id="latestfiles">
-		<span class="sidebartitle">Latest Files</span><br />
+</section>
+
+<aside id="sidebar_home">
+	
+	<section id="search">
+		
+		<h3>Search TI-Nspire Files</h3>
+		<% form_tag search_path, :method => "get" do %>
+			<%= text_field_tag :search_term %>
+			<%= submit_tag "Search!" %>
+		<% end %>
+		
+	</section><br />
+	
+	<section id="latestfiles">
+		
+		<h3>Latest Files</h3>
 		<% @files.each do |file| %>
 			<%= link_to file.title, "downloads/" + file.file_url, :confirm => "Do you want to download the file " + file.title + "?" %>
 			<br />
 		<% end %>
-	</div>
-	<div id="popularlinks">
-		<span class="sidebartitle">Popular Links</span><br />
+		
+	</section>
+	
+	<section id="popularlinks">
+		
+		<h3>Popular Links</h3>
 		<a href="http://hackspire.unsads.com/wiki/index.php/Main_Page">Hackspire</a><br /> 
 		<a href="http://www.johnhanna.us/TI-nspire.htm">John Hanna's TI Nspire Page</a><br /> 
 		<a href="http://ticalc.org">Ticalc.org</a><br /> 
@@ -35,5 +47,7 @@
 		<a href="http://www.timath.com">TI Math</a><br /> 
 		<a href="http://nelsonsousa.pt">Nelson Sousa's TI Nspire Website</a><br /> 
 		<a href="http://handheldgeometry.co.uk">Handheld Geometry</a>
-	</div>
-</div>
+		
+	</section>
+	
+</aside>
