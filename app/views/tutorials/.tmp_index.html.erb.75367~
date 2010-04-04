@@ -1,0 +1,8 @@
+<h1>Tutorials</h1>
+<ul id="tutorials">
+	<% @tutorials.each do |tutorial| %>
+	<li>
+		<a href="tutorials/view/<%= tutorial.id %>"><%= tutorial.title %></a>
+	</li>
+	<% end %>
+</ul>

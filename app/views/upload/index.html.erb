@@ -1,0 +1,11 @@
+<h1>Upload Files into the database</h1>
+<%= error_messages_for("download") %>
+
+<% form_for(:download, 
+            :url => {:action => 'save'}, 
+            :html => { :multipart => true }) do |form| %>
+
+    Upload your file: <%= form.file_field("uploaded_file") %><br/>
+
+    <%= submit_tag("Upload file") %>
+<% end %>

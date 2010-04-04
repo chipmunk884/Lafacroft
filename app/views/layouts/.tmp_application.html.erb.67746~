@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Lafacroft</title>
+        <%= stylesheet_link_tag 'default' %>
+		<%= stylesheet_link_tag '960' %>
+		<link rel="Shortcut Icon" href="../images/logo.gif" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    	<section class="container_12">
+		
+	        <nav class="grid_12">
+            		<ul>
+            			<li><%= link_to "Home", :controller => "/home" %></li>
+            			<li><%= link_to "TI-Nspire Files", :controller => "/nspire" %></li>
+						<li><%= link_to "Tutorials", :controller => "/tutorials" %></li>
+						<li><%= link_to "More TI-Nspire Resources", :controller => "/resources" %></li>
+            		</ul>
+            </nav>
+			
+        	<header class="grid_12">
+        		<%= link_to image_tag('headerimage.png', {:width => 230, :height => 150, :id => 'nspire_logo'}),
+							:controller => '/home' %>
+				<%= link_to image_tag('headerlogo.png', {:width => 700, :height => 80, :id => 'lafacroft_logo'}),
+							:controller => '/home' %>
+
+          	</header>
+			
+			<section id="content">
+					<%= yield %>
+			</section>
+			
+    	</section>
+		<div class="clearfloat"></div>
+		<footer>
+			<p id="footercopy">&copy; 2009 Lafacroft Programs.  All rights reserved.</p>
+			<p id="footerlink"><%= link_to "About Us", :controller => '/info', :action => 'about' %>
+			 - <%= link_to "Contact Us", :controller => '/info', :action => 'contact' %></p>
+		</footer>
+		<div class="clearfloat"></div>
+		<%= javascript_include_tag "jquery" %>
+		<%= javascript_include_tag "application" %>
+    </body>
+</html>

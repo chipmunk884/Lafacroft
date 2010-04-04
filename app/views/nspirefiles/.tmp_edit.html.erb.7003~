@@ -1,0 +1,40 @@
+<h1>Editing <%= @nspirefile.title %></h1>
+
+<div id="nspireeditform">
+<% form_for(@nspirefile) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :image_url, "Image" %><br />
+    <%= f.text_field :image_url, :id => "image_edit_field" %><br />
+	<%= f.label "Image Preview" %><br />
+	<%= image_tag "nspire/" + @nspirefile.image_url, :id => "image_preview_field" %>
+  </p>
+  <p>
+    <%= f.label "Download Path" %><br />
+    <%= f.text_field :file_url %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+</div>
+
+<%= link_to 'Show', @nspirefile %> |
+<%= link_to 'Back', nspirefiles_path %>

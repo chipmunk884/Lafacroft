@@ -1,0 +1,14 @@
+<% @nspirefiles.each do |nspirefile| %>
+  <div class="nspirefile">
+  	<div class="nspirefileleft">
+  		<span class="nspirefiletitle"><%= link_to h(nspirefile.title + " - " + nspirefile.category), "downloads/" + nspirefile.file_url, :confirm => "Do you want to download the file " + nspirefile.title + "?" %></span><br />
+		<span class="nspirefileauthor">Created by <%= h nspirefile.author %><br /></span>
+		<span class="nspirefiledescription"><%=h nspirefile.description %></span>
+	</div>
+	<div class="nspirefileright">
+		<%=image_tag "nspire/" + nspirefile.image_url %>
+	</div>
+  </div>
+	<br class="clearfloat" />
+	<hr />
+<% end %>

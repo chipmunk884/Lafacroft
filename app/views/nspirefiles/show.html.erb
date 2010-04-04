@@ -1,0 +1,35 @@
+<fieldset id="showfieldset">
+	<legend><%=h @nspirefile.title %></legend>
+<p>
+  <b>Author:</b>
+  <%=h @nspirefile.author %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @nspirefile.category %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @nspirefile.description %>
+</p>
+
+<p>
+  <b>Image Path:</b>
+  <%= h @nspirefile.image_url %>
+</p>
+
+<p>
+  <b>Image Preview:</b><br />
+  <%= image_tag "nspire/" + @nspirefile.image_url %>
+</p>
+
+<p>
+  <b>Download Path:</b>
+  <%=h @nspirefile.file_url %>
+</p>
+</fieldset>
+
+<%= link_to 'Edit', edit_nspirefile_path(@nspirefile) %> |
+<%= link_to 'Back', nspirefiles_path %>

@@ -1,0 +1,11 @@
+<h1>Search TI-Nspire Files</h1>
+<h1><%= @debug %></h1>
+<% form_tag search_path, :method => "get" do %>
+	<%= text_field_tag :search_term %>
+	<%= submit_tag "Search!" %>
+<% end %>
+<br />
+<% @results.each do |result| %>
+<%= result.title %><br />
+<% end %>
+<%= render :partial => "nspire/nspire_file", :collection => @results, :as => :nspirefile %>

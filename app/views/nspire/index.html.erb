@@ -1,0 +1,9 @@
+<div class="grid_12">
+<h1>TI-Nspire Files</h1>
+<% form_tag search_path, :method => "get" do %>
+	<%= text_field_tag :search_term %>
+	<%= submit_tag "Search!" %>
+<% end %>
+<br />
+<%= render :partial => "nspire/nspire_file", :collection => @nspirefiles, :as => :nspirefile %>
+</div>

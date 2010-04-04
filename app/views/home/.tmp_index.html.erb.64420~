@@ -1,0 +1,41 @@
+<section class="grid_8" id="posts_home">
+	<% @posts.each do |post| %>
+		<article id="<%= post.id %>">
+			<hgroup>
+				<h1><%= h post.title %></h1>
+				<h2>Posted on <%= post.created_at.strftime('%m/%d/%Y') %> by <%= h post.author %></h2>
+			</hgroup>
+			<p><%= post.content %></p>
+		</article>
+	<% end %>
+</section>
+<aside class="grid_4" id="sidebar_home">
+	<section id="search">
+		<form action="/search">
+			<h3>Search TI-Nspire Files</h3>
+			<input type="text" />
+			<input type="submit" value="Search!" />
+		</form>
+	</section><br />
+	<section id="latestfiles">
+		<h3>Latest Files</h3>
+		<% @files.each do |file| %>
+			<%= link_to file.title, "downloads/" + file.file_url, :confirm => "Do you want to download the file " + file.title + "?" %>
+			<br />
+		<% end %>
+	</section>
+	<section id="popularlinks">
+		<h3>Popular Links</h3>
+		<a href="http://hackspire.unsads.com/wiki/index.php/Main_Page">Hackspire</a><br /> 
+		<a href="http://www.johnhanna.us/TI-nspire.htm">John Hanna's TI Nspire Page</a><br /> 
+		<a href="http://ticalc.org">Ticalc.org</a><br /> 
+		<a href="http://www.tinspire.com">TI Nspire Official Website</a><br /> 
+		<a href="http://www.cemetech.net">Cemetech</a><br /> 
+		<a href="http://groups.google.com.au/group/tinspire?hl=en-GB">TI Nspire Google Group</a><br /> 
+		<a href="http://www.junemann.nl/maxcoderz/">Maxcoderz</a><br /> 
+		<a href="http://www.unitedti.org">United TI</a><br /> 
+		<a href="http://www.timath.com">TI Math</a><br /> 
+		<a href="http://nelsonsousa.pt">Nelson Sousa's TI Nspire Website</a><br /> 
+		<a href="http://handheldgeometry.co.uk">Handheld Geometry</a>
+	</div>
+</aside>
