@@ -14,7 +14,7 @@ default_run_options[:pty] = true
 set :repository,  "git://github.com/chipmunk884/Lafacroft.git"
 set :scm, "git"
 set :branch, "master"
-set :deploy_via, :remote_cache
+#set :deploy_via, :remote_cache
  
 # This is related to site5 too.
 set :deploy_to, "/home/#{user}/#{application}"

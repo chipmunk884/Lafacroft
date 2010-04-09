@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :authenticate
+  before_filter :login_required
   # GET /admin_posts
   # GET /admin_posts.xml
   def index
@@ -86,13 +86,6 @@ class PostsController < ApplicationController
   end
   
   private
-  
-  def authenticate
-    authenticate_or_request_with_http_basic do |user_name, password|
-        user_name == "lafacroftadmin" && password == "coville123"
-      end
-  end
-  
   def post_types
     return %w[home tutorial]
   end

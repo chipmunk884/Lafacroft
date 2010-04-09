@@ -1,5 +1,5 @@
 class NspirefilesController < ApplicationController
-  before_filter :authenticate
+  before_filter :login_required
   # GET /nspirefiles
   # GET /nspirefiles.xml
   def index
@@ -85,11 +85,6 @@ class NspirefilesController < ApplicationController
     end
   end
   private
-  def authenticate
-    authenticate_or_request_with_http_basic do |user_name, password|
-        user_name == "lafacroftadmin" && password == "coville123"
-      end
-  end
   def get_categories
     ["Activities", "Algebra", "Assembly" ,"Calculus" ,"Games", "Geometry" ,"Libraries", "Middle School ", "Misc.", "Science", "Statistics"]
   end
