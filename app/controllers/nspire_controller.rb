@@ -8,24 +8,24 @@ class NspireController < ApplicationController
     end
   end
 
-  def fixarchive
-    nspirefile = Nspirefile.all
-    nspirefile.each do |file|
-      url = file.file_url
-      tns = url[/\w*\.tns/]
-      zip = url[/\w*\.zip/]
-
-      if (tns != nil)
-        file.file_url = tns
-      elsif (zip !=nil)
-        file.file_url = zip
-      else
-        file.file_url = ""
-      end
-      file.save
-    end
-    render :text => "Archive fixed"
-  end
+#  def fixarchive
+#    nspirefile = Nspirefile.all
+#    nspirefile.each do |file|
+#      url = file.file_url
+#      tns = url[/\w*\.tns/]
+#      zip = url[/\w*\.zip/]
+#
+#      if (tns != nil)
+#        file.file_url = tns
+#      elsif (zip !=nil)
+#        file.file_url = zip
+#      else
+#        file.file_url = ""
+#      end
+#      file.save
+#    end
+#    render :text => "Archive fixed"
+#  end
 
   private
   def search(search_term)
