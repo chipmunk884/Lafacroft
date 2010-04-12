@@ -1,4 +1,0 @@
-<section class="grid_12">
-<h1>TI-Nspire Files</h1>
-<%= render :partial => "nspire/nspire_file", :collection => @nspirefiles, :as => :nspirefile %>
-</section>

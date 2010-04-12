@@ -65598,3 +65598,746 @@ ActionController::RoutingError (No route matches "/javascripts/tiny_mce/plugins/
   -e:2
 
 Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 00:13:11) [GET]
+  [4;36;1mPost Load (2.9ms)[0m   [0;1mSELECT * FROM "posts" WHERE (post_type = 'home') ORDER BY created_at DESC[0m
+  [4;35;1mNspirefile Load (2.0ms)[0m   [0mSELECT * FROM "nspirefiles" ORDER BY id LIMIT 15[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 1399ms (View: 1369, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:13:23) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x53e0cc0>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.8ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NspireController#search (for 127.0.0.1 at 2010-04-12 00:16:42) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+
+ActionController::UnknownAction (No action responded to search. Actions: index):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 00:16:48) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE (post_type = 'home') ORDER BY created_at DESC[0m
+  [4;36;1mNspirefile Load (1.0ms)[0m   [0;1mSELECT * FROM "nspirefiles" ORDER BY id LIMIT 15[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 40ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:16:50) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x49a9060>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:21:09) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x5a4ca00>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:21:13) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x4b1b040>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 00:22:06) [GET]
+  [4;36;1mPost Load (2.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE (post_type = 'home') ORDER BY created_at DESC[0m
+  [4;35;1mNspirefile Load (1.0ms)[0m   [0mSELECT * FROM "nspirefiles" ORDER BY id LIMIT 15[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 1114ms (View: 1101, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:22:28) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x5408520>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:25:06) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x3d88160>):
+  app/controllers/nspire_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:25:20) [GET]
+  Parameters: {"search_term"=>"", "commit"=>"Search!"}
+  [4;36;1mNspirefile Load (24.4ms)[0m   [0;1mSELECT * FROM "nspirefiles" WHERE (title LIKE '%%' OR author LIKE '%%' OR category LIKE '%%' OR description LIKE '%%') ORDER BY updated_at DESC[0m
+Rendering template within layouts/application
+Rendering nspire/index
+Rendered nspire/_nspire_file (7.8ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Completed in 127ms (View: 94, DB: 24) | 200 OK [http://localhost/nspire?search_term=&commit=Search%21]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/connect4.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/textedit.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/nspire/Math.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/mouseindocs.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:21) [GET]
+  Parameters: {"1260382868"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/Demo/dice+roll+simulator.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+  Parameters: {"1260382875"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/Geometry/angles+and+triangle+centers.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/algebra/Alg1Act7_WhatsMyRule_EN.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+  Parameters: {"1266542728"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+  Parameters: {"1260382796"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/literal_equations+revised.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+  Parameters: {"1260382781"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/param+trace.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/arcsector.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/arcs.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/midpoint&distance.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/pattern%20builder.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/volumechallenge.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/volumemcrosssection.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+  Parameters: {"1260382830"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/Interpolation+and+approximate+root+of+equations.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/simplex.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/webplots.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/Calendar.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/circle%20area%20en.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/confidence%20intervals%20for%20means.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/pp.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/centoid.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/chain%20rule.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/ddddd.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/ellpse%20a%20d%20hyperbola.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/mannwhitney.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/parametricfriend.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/trigonometric+equations.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/shadingsectors.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/nspire/parabola_vertex_form.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/nspire/dynamicplusminus2.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/nspire/treewithpointer.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:24) [GET]
+  Parameters: {"1266542728"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NspireController#index (for 127.0.0.1 at 2010-04-12 00:25:30) [GET]
+  Parameters: {"search_term"=>"nelson", "commit"=>"Search!"}
+  [4;35;1mNspirefile Load (2.0ms)[0m   [0mSELECT * FROM "nspirefiles" WHERE (title LIKE '%nelson%' OR author LIKE '%nelson%' OR category LIKE '%nelson%' OR description LIKE '%nelson%') ORDER BY updated_at DESC[0m
+Rendering template within layouts/application
+Rendering nspire/index
+Rendered nspire/_nspire_file (2.9ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (1.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Rendered nspire/_nspire_file (0.0ms)
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://localhost/nspire?search_term=nelson&commit=Search%21]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:30) [GET]
+  Parameters: {"1260382868"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/Demo/dice+roll+simulator.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/circle%20area%20en.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/Calendar.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:31) [GET]
+  Parameters: {"1266542728"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-12 00:25:31) [GET]
+  Parameters: {"1260382781"=>nil}
+
+ActionController::RoutingError (No route matches "/images/nspire/param+trace.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
