@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="f17f2e49-154f-4583-8e0f-c688709d54f8" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\rails\lafacroft\nbproject\private\private.properties" afterPath="" />
+    <list default="true" readonly="true" id="f17f2e49-154f-4583-8e0f-c688709d54f8" name="Default" comment="Fixed search function by moving from model to controller.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\rails\lafacroft\nbproject\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails\lafacroft\nbproject\project.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails\lafacroft\nbproject\private\rake-d.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/nspire_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/nspire_controller.rb" />
     </list>
     <ignored path="lafacroft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,20 +46,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="37" selection-start="468" selection-end="468" vertical-scroll-proportion="0.024523161">
+            <state line="34" column="55" selection-start="1291" selection-end="1291" vertical-scroll-proportion="-24.48">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nspire_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nspire_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/nspire_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="26" column="35" selection-start="682" selection-end="682" vertical-scroll-proportion="0.5294118">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lafacroft" pinned="false" current="false" current-in-tab="false">
+        <entry file="model://lafacroft">
+          <provider selected="true" editor-type-id="AssociationsFileEditorProvider">
+            <state>
+              <settings isFieldsVisible="true" isMigrationFieldsVisible="true" isTypicalFieldsVisible="false" isOwnFieldsVisible="false" isHandToolMode="true" />
             </state>
           </provider>
         </entry>
@@ -96,11 +103,11 @@
       <list>
         <option value="$PROJECT_DIR$/app/controllers/upload_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/default.css" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/nspirefile.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/nspire_controller.rb" />
       </list>
     </option>
@@ -138,7 +145,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Favorites" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -263,19 +273,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: lafacroft">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -459,14 +466,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1448" y="87" width="1456" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15373766" sideWeight="0.68108106" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11485775" sideWeight="0.68108106" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31135136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -545,13 +552,6 @@
         <state line="1" column="23" selection-start="56" selection-end="56" vertical-scroll-proportion="0.020022247" />
       </provider>
     </entry>
-    <entry file="model://lafacroft">
-      <provider selected="true" editor-type-id="AssociationsFileEditorProvider">
-        <state>
-          <settings isFieldsVisible="true" isMigrationFieldsVisible="true" isTypicalFieldsVisible="false" isOwnFieldsVisible="false" isHandToolMode="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nspire/_nspire_file.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="16" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" />
@@ -564,19 +564,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="406" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="31" selection-start="406" selection-end="417" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="29" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/nspire_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/nspirefiles_controller.rb">
@@ -589,9 +582,23 @@
         <state line="4" column="150" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="model://lafacroft">
+      <provider selected="true" editor-type-id="AssociationsFileEditorProvider">
+        <state>
+          <settings isFieldsVisible="true" isMigrationFieldsVisible="true" isTypicalFieldsVisible="false" isOwnFieldsVisible="false" isHandToolMode="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="468" selection-end="468" vertical-scroll-proportion="0.024523161">
+        <state line="34" column="55" selection-start="1291" selection-end="1291" vertical-scroll-proportion="-24.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/nspire_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="682" selection-end="682" vertical-scroll-proportion="0.5294118">
           <folding />
         </state>
       </provider>
